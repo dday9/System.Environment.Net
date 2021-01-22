@@ -32,7 +32,7 @@ Namespace System
             For Each variable In variables
                 Dim parsedVariable = Parse(variable)
                 If (parsedVariables.ContainsKey(parsedVariable.Key)) Then
-                    Throw New Exception($"Multiple variables withe the key: {parsedVariable.Key}")
+                    Throw New Exception($"Multiple variables with the key: {parsedVariable.Key}")
                 End If
 
                 parsedVariables.Add(parsedVariable.Key, parsedVariable.Value)
